@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+  <servlet>
+    <servlet-name>ServletTest</servlet-name>
+    <servlet-class>cp01.ServletTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletTest</servlet-name>
+    <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>addr-servlet</servlet-name>
+    <servlet-class>brain.AdderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addr-servlet</servlet-name>
+    <url-pattern>/brain/adder</url-pattern>
+  </servlet-mapping>
+</web-app>
