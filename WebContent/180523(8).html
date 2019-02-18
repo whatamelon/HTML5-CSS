@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<title>DOM Basic</title>
+	<script>
+		window.onload = function () {
+			
+			function changeImage1() {
+				
+				var image = document.getElementById('image');
+				
+				image.src = 'mojKvNDqkQP4KKR49vUJ.jpg';
+				image.width = 300;
+				image.height = 200;
+			};
+			
+			function changeImage2() {
+				
+				var image = document.getElementById('image');
+				
+				image.src = 'image.jpg';
+				image.width = 300;
+				image.height = 200;
+			};
+			
+	</script>
+</head>
+<body>
+	<img id ="image" />
+	<a href = "Javascript: changeImage1()">이미지1</a>
+	<a href = "Javascript: changeImage2()">이미지2</a>
+</body>
+</html>
