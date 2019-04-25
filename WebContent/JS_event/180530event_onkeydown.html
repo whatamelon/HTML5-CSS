@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	window.onload = function() {
+		var inputObj = document.getElementById('id');
+		inputObj.onkeydown = function(e) {
+			var event;
+			event = e;
+
+			if (47 < e.keyCode && e.keyCode < 58 || e.keycode>95 && e.keyCode <106 || e.keycode == 8) {
+				return true;
+			} else {
+				alert('숫자만');
+				return false;
+			}
+		};
+	};
+</script>
+</head>
+<body>
+	아이디
+	<input type="text" id="id" />
+</body>
+</html>
